@@ -1,3 +1,5 @@
+package Events;
+
 public enum EventType {
     UNKNOWN_EVENT,
     KEYBOARD_EVENT,

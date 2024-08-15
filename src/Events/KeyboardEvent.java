@@ -1,3 +1,5 @@
+package Events;
+
 public class KeyboardEvent extends Event {
     public boolean isKeyDown;
 

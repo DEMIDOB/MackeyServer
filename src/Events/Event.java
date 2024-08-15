@@ -1,8 +1,8 @@
-
+package Events;
 
 public class Event {
-    EventType type;
-    int code;
+    public EventType type;
+    public int code;
 
     public Event(EventType type, int code) {
         this.type = type;

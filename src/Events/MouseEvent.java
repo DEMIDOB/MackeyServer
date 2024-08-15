@@ -1,3 +1,5 @@
+package Events;
+
 public class MouseEvent extends Event {
     public static final int CODE_CONST = 10000;
 
@@ -18,11 +20,11 @@ public class MouseEvent extends Event {
             update(EventType.MOUSE_BUTTON_EVENT, args[1].charAt(0));
             switch (args[2].charAt(0)) {
                 case 'r':
-                    Main.dlog("Right!");
+//                    Main.dlog("Right!");
                     button = MouseButton.RIGHT;
                     break;
                 default:
-                    Main.dlog("LEFT!");
+//                    Main.dlog("LEFT!");
                     button = MouseButton.LEFT;
                     break;
             }

@@ -1,3 +1,8 @@
+import Events.Event;
+import Events.KeyboardEvent;
+import Events.MouseButton;
+import Events.MouseEvent;
+
 import java.awt.*;
 import java.awt.event.InputEvent;
 import java.io.BufferedReader;
@@ -49,7 +54,7 @@ public class MackeyServer {
                 break;
             }
 
-            Event event = Event.parse(line);
+            Events.Event event = Events.Event.parse(line);
             try {
                 handleEvent(event);
             } catch (IllegalArgumentException exc) {

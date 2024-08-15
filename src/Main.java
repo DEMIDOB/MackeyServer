@@ -1,3 +1,5 @@
+import Util.NetworkHelper;
+
 import java.awt.*;
 import java.io.IOException;
 
@@ -10,6 +12,9 @@ public class Main {
     public static void main(String[] args) throws InterruptedException, IOException, AWTException {
         // TODO: get my local ip and output the whole address
         // TODO: ?accept only local network connections?
+
+        String localIP = NetworkHelper.getLocalIP();
+        System.out.println("Listening at " + localIP + ":" + SERVER_PORT);
 
         MackeyServer server = new MackeyServer("0.0.0.0", SERVER_PORT);
         while (true) {
